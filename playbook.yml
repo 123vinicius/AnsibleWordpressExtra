@@ -1,0 +1,10 @@
+---
+- hosts: wordpress
+  become: yes
+  remote_user: vinicius
+
+  roles:
+    - server
+    - php
+    - mysql
+    - wordpress 
